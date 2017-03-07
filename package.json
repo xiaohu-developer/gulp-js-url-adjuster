@@ -1,0 +1,21 @@
+{
+  "name": "gulp-js-url-adjuster",
+  "version": "1.0.0",
+  "description": "gulp plugin to adjuster urls in js file",
+  "main": "index.js",
+  "repository": "git@github.com:xiaohu-developer/gulp-js-url-adjuster.git",
+  "author": "BigMurry <hhdiao@siom.ac.cn>",
+  "license": "MIT",
+  "scripts": {
+    "test": "gulp --gulpfile test/gulpfile.js"
+  },
+  "dependencies": {
+    "falafel": "^2.0.0",
+    "through2": "^2.0.3",
+    "url-twister": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2"
+  }
+}
