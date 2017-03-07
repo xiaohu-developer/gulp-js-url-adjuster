@@ -7,10 +7,12 @@
   "author": "BigMurry <hhdiao@siom.ac.cn>",
   "license": "MIT",
   "scripts": {
-    "test": "gulp --gulpfile test/gulpfile.js"
+    "test": "gulp --gulpfile test/gulpfile.js",
+    "throw": "gulp --gulpfile test/gulpfile.js throw"
   },
   "dependencies": {
     "falafel": "^2.0.0",
+    "gulp-util": "^3.0.8",
     "through2": "^2.0.3",
     "url-twister": "^1.0.0"
   },

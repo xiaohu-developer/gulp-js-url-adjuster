@@ -19,3 +19,12 @@ gulp.task('default', function () {
     }))
     .pipe(gulp.dest('./'));
 });
+
+gulp.task('throw', function () {
+  gulp.src('jsfile.css')
+    .pipe(urlAdjuster(options))
+    .pipe(rename(function (path) {
+      path.basename += '-vert';
+    }))
+    .pipe(gulp.dest('./'));
+});

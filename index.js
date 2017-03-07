@@ -2,6 +2,7 @@ var through = require('through2');
 var falafel = require('falafel');
 var urlTwister = require('url-twister');
 var path = require('path');
+var gutil = require('gulp-util');
 
 var replacer = function replacer (str, options) {
   var filter = options.filter;
@@ -28,7 +29,7 @@ var replacer = function replacer (str, options) {
 module.exports = function (options) {
   return through.obj(function (file, enc, cb) {
     if (path.extname(file.path) !== '.js') {
-      throw new Error('Only js files are supported.');
+      throw new gutil.PluginError('gulp-js-url-adjuster', `[${file.path}] is not a js file.`);
     }
     options = options || {};
     var js = falafel(file.contents.toString(), function (node) {
