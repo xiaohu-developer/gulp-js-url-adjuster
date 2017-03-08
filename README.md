@@ -51,4 +51,4 @@ function d (x, y) {
 - use the same url adjuster as [gulp-ex-css-url-adjuster](https://github.com/xiaohu-developer/gulp-ex-css-url-adjuster)
 
 # Todo
-- [ ]Support relative url
+- [ ] Support relative url
